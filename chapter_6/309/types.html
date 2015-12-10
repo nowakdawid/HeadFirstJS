@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    var test1 = "abcdef";
+    var test2 = 123;
+    var test3 = true;
+    var test4 = {};
+    var test5 = [];
+    var test6;
+    var test7 = {"abcdef": 123};
+    var test8 = ["abcdef", 123];
+    function test9() {
+        return "abcdef"
+    }
+    ;
+    var test10 = null;
+    var notANumber = 0/0;
+    var notANumber2 = 0/0;
+
+    var tamale=1.7976931348623157E+10308;
+
+    if (tamale == Infinity) {
+        alert("That's a big tamale!");
+    }
+
+    if(notANumber == notANumber2) alert("Equal!");
+    else alert("Not equal!");
+
+    if(isNaN(test1)) alert("Its not a number!");
+
+    console.log(typeof test1);
+    console.log(typeof test2);
+    console.log(typeof test3);
+    console.log(typeof test4);
+    console.log(typeof test5);
+    console.log(typeof test6);
+    console.log(typeof test7);
+    console.log(typeof test8);
+    console.log(typeof test9);
+    console.log(typeof test10);
+    console.log(notANumber);
+
+    var x = 5;
+    var y = "5";
+
+    var numberY = Number(y);
+
+    console.log(numberY);
+
+    var nan = Math.sqrt(-1);
+
+    var number = 5;
+
+    console.log(nan + number);
+
+    if(x !== y) alert("X is not equal Y!");
+
+    var z = 0;
+    var w = true;
+
+    if(z <= w) alert("Z is less or equal W!");
+
+    var banana = "banana";
+    var mango = "mango";
+
+    if(banana <= mango) alert("Banana is less than mango!");
+
+    var apple = "Apple";
+    var apple2 = "apple";
+
+    if(apple < apple2) alert("Apple is less than apple!");
+
+</script>
+</body>
+</html>
