@@ -19,11 +19,10 @@ var model = {
     shipLength: 3,
     shipsSunk: 0,
 
-    ships: [
+    ships:
+        [{ locations: [0, 0, 0], hits: ["", "", ""] },
         { locations: [0, 0, 0], hits: ["", "", ""] },
-        { locations: [0, 0, 0], hits: ["", "", ""] },
-        { locations: [0, 0, 0], hits: ["", "", ""] }
-    ],
+        { locations: [0, 0, 0], hits: ["", "", ""] }],
 
 // original hard-coded values for ship locations
     /*
@@ -44,7 +43,8 @@ var model = {
             if (ship.hits[index] === "hit") {
                 view.displayMessage("Oops, you already hit that location!");
                 return true;
-            } else if (index >= 0) {
+            }
+            else if (index >= 0) {
                 ship.hits[index] = "hit";
                 view.displayHit(guess);
                 view.displayMessage("HIT!");
@@ -139,7 +139,8 @@ function parseGuess(guess) {
     if (guess === null || guess.length !== 2) {
         alert("Oops, please enter a letter and a number on the board.");
     } else {
-        firstChar = guess.charAt(0);
+        firstChar = guess.charAt(0)
+
         var row = alphabet.indexOf(firstChar);
         var column = guess.charAt(1);
         if (isNaN(row) || isNaN(column)) {

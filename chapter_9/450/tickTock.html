@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    var tick = true;
+    function ticker() {
+        if (tick) {
+            document.write("Tick<br>");
+            tick = false;
+        } else {
+            document.write("Tock<br>");
+            tick = true;
+        }
+    }
+    setInterval(ticker, 1000);
+
+</script>
+</body>
+</html>
