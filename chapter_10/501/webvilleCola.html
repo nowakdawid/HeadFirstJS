@@ -28,29 +28,29 @@
     }
 
     function compareName(colaA, colaB) {
-        if (colaA.sold > colaB.sold) {
+        if (colaA.name > colaB.name) {
             return 1;
-        } else if (colaA.sold === colaB.sold) {
+        } else if (colaA.name === colaB.name) {
             return 0;
         } else {
             return -1;
         }
     }
 
-    function compareSold(colaA, colaB) {
-        if (colaA.sold > colaB.sold) {
+    function compareCalories(colaA, colaB) {
+        if (colaA.calories > colaB.calories) {
             return 1;
-        } else if (colaA.sold === colaB.sold) {
+        } else if (colaA.calories === colaB.calories) {
             return 0;
         } else {
             return -1;
         }
     }
 
-    function compareSold(colaA, colaB) {
-        if (colaA.sold > colaB.sold) {
+    function compareColor(colaA, colaB) {
+        if (colaA.color > colaB.color) {
             return 1;
-        } else if (colaA.sold === colaB.sold) {
+        } else if (colaA.color === colaB.color) {
             return 0;
         } else {
             return -1;
@@ -65,7 +65,18 @@
             ", Sold: " + products[i].sold);
         }
     }
+
     products.sort(compareSold);
+    console.log("By sold:");
+    printProducts(products);
+    products.sort(compareName);
+    console.log("\nBy name:");
+    printProducts(products);
+    products.sort(compareCalories);
+    console.log("\nBy calories:");
+    printProducts(products);
+    products.sort(compareColor);
+    console.log("\nBy color:");
     printProducts(products);
 
 </script>

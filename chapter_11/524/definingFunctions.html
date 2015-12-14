@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    var migrating = true;
+    if (migrating) {
+        quack(4);
+        fly(4);
+    }
+    var fly = function(num) {
+        for (var i = 0; i < num; i++) {
+            console.log("Flying!");
+        }
+    };
+    function quack(num) {
+        for (var i = 0; i < num; i++) {
+            console.log("Quack!");
+        }
+    }
+
+
+</script>
+</body>
+</html>
