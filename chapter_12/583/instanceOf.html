@@ -7,6 +7,16 @@
 <body>
 <script>
 
+    function Car(params) {
+        this.make = params.make;
+        this.model = params.model;
+        this.year = params.year;
+        this.color = params.color;
+        this.passengers = params.passengers;
+        this.convertible = params.convertible;
+        this.mileage = params.mileage;
+    }
+
     var cadiParams = {make: "GM", model: "Cadillac", year: 1955, color: "tan",
         passengers: 5, convertible: false, mileage: 12892};
 
