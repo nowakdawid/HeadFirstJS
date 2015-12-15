@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    function multN(n) {
+        return function multBy(m) {
+            return n*m;
+        }
+    }
+    var multBy3 = multN(3);
+    console.log("Multiplying 2: " + multBy3(2));
+    console.log("Multiplying 3: " + multBy3(3));
+
+</script>
+</body>
+</html>
