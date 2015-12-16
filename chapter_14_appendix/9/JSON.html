@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    var fidoString = '{ "name": "Fido", "breed": "Mixed", "weight": 38 }';
+
+    var fido = JSON.parse(fidoString);
+
+    console.log(fido.name);
+
+    var fido2 = {
+        name: "Fido",
+        breed: "Mixed",
+        weight: 38
+    };
+
+    var fidoString2 = JSON.stringify(fido2);
+
+    console.log(fidoString2);
+
+</script>
+</body>
+</html>
